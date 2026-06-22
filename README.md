@@ -71,7 +71,7 @@ Note: If you are using ngrok for this sample application, the answer URL and eve
 https://xxxxxx.ngrok.xxx/answer</br>
 https://xxxxxx.ngrok.xxx/event</br></br>
 
-**Enable** RTC (In-app vouce & messaging)
+**Enable** RTC (In-app voice & messaging)
 - Under Event URL, **select** HTTP POST, and enter</br>
 https://\<host\>:\<port\>/rtc</br>
 (replace \<host\> and \<port\> with the public host name and if necessary public port of the server where this sample application is running)</br>
