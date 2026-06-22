@@ -11,11 +11,11 @@ You will hear sample TTS as jokes.
 ### Local deployment - Set up part 1 - Internet tunneling service - ngrok
 
 If you plan to test using `Local deployment with ngrok` (Internet tunneling service), here are the instructions to set up ngrok:<br>
-- [Install ngrok](https://ngrok.com/download),<br>
-- Make sure you are using the latest version of ngrok and not using a previously installed version of ngrok,
-- Sign up for a free [ngrok account](https://dashboard.ngrok.com/signup),<br>
-- Verify your email address from the email sent by ngrok,<br>
-- Retrieve [your Authoken](https://dashboard.ngrok.com/get-started/your-authtoken),<br>
+- [Install ngrok](https://ngrok.com/download)<br>
+- Make sure you are using the latest version of ngrok and not using a previously installed version of ngrok
+- Sign up for a free [ngrok account](https://dashboard.ngrok.com/signup)<br>
+- Verify your email address from the email sent by ngrok<br>
+- Retrieve [your Authoken](https://dashboard.ngrok.com/get-started/your-authtoken)<br>
 - Run the command `ngrok config add-authtoken <your-authtoken>`<br>
 - Set up the tunnel
 	- Run `ngrok config edit`
@@ -26,7 +26,7 @@ If you plan to test using `Local deployment with ngrok` (Internet tunneling serv
 				proto: http</br>
 				addr: 8000</br>
 		</code></pre>
-		- For a [paid ngrok account](https://dashboard.ngrok.com/billing/subscription), you may set a ngrok hostname that never changes on each ngrok new launch, add following lines to the ngrok configuration file (under authoken line) - set hostname to actual desired values:</br>
+		- For a [paid ngrok account](https://dashboard.ngrok.com/billing/subscription), you may set a ngrok hostname that never changes on each ngrok new launch, add following lines to the ngrok configuration file (under authoken line) - set hostname to actual desired value:</br>
 		<pre><code>	
 		tunnels:
 			mytunnel:</br>
@@ -47,9 +47,9 @@ This Node.js server application (this repository) is running on local port 8000.
 
 ### Non local deployment
 
-If you are using hosted servers, for example Vonage Code Runtime, your own servers, or some other cloud provider,
-you will need the public hostnames and if necessary public ports of the servers that
-run this server application (from this repository), e.g.</br>
+If you are using hosted servers, for example Vonage Code Runtime, your own servers, or some other cloud providers,
+you will need the public hostname and if necessary public port of the server that
+runs this server application (from this repository), e.g.</br>
 	*`xxxx.xxxx.runtime.vonage.cloud`, `myserver.mycompany.com:40000`*</br>
 
 ### Set up your Vonage Voice API application credentials and other parameters
